@@ -1,0 +1,151 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<style>
+body{
+	   
+    background-image: linear-gradient(#79a06d, #79a06d); 
+}
+
+
+h2{
+    text-align:center;
+    
+}
+
+</style>
+</head>
+<body>
+<!-- <form>
+<table>
+<tr>
+<td>Job Title</td>
+<td><input type="text" ng-model="job.jobTitle"></td>
+</tr>
+
+
+<tr>
+<td>Job Description</td>
+<td><textarea ng-model="job.jobDescription"></textarea></td>
+</tr>
+
+<tr>
+<td>Skills Required</td>
+<td><input type="text" ng-model="job.skillsRequired"></td>
+</tr>
+
+<tr>
+<td>Salary</td>
+<td><input type="text" ng-model="job.salary"></td>
+</tr>
+
+<tr>
+<td>location</td>
+<td><input type="text" ng-model="job.location"></td>
+</tr>
+
+<tr><td>
+<input type="submit" value="Post Job" ng-click="saveJob()">
+</td>
+</tr>
+</table>
+
+</form> -->
+
+
+
+<div class="container-fluid">
+   <div class="row-fluid" >
+                   
+                     
+        <div class="col-md-offset-4 col-md-4" id="box">
+     <h2>Job Detail</h2>
+                      
+       <hr>
+                          
+
+     <form class="form-horizontal" >
+     <fieldset>
+      
+     <div class="form-group">
+
+  <div class="col-md-12">
+    <div class="input-group">
+     <span class="input-group-addon"><!-- <i class="glyphicon glyphicon-user"></i> --></span>
+   <input placeholder="Job Title" class="form-control" type="text" ng-model="job.jobTitle">
+    </div>
+    </div>
+    </div>
+              <div class="form-group">
+
+  <div class="col-md-12">
+    <div class="input-group">
+      <span class="input-group-addon"><!-- <i class="glyphicon glyphicon-user"></i> --></span> 
+   <textarea placeholder="Job Description" class="form-control" type="text" ng-model="job.jobDescription"></textarea>
+    </div>
+    </div>
+    </div>
+    <div class="form-group">
+
+  <div class="col-md-12">
+    <div class="input-group">
+      <span class="input-group-addon"><!-- <i class="glyphicon glyphicon-user"></i> --></span> 
+   <input placeholder="Skills Required" class="form-control" type="text" ng-model="job.skillsRequired">
+    </div>
+    </div>
+    </div>
+    
+    <div class="form-group">
+
+  <div class="col-md-12">
+    <div class="input-group">
+      <span class="input-group-addon"><!-- <i class="glyphicon glyphicon-user"></i> --></span> 
+   <input placeholder="salary" class="form-control" type="text" ng-model="job.salary">
+    </div>
+    </div>
+    </div>
+                       
+           <div class="form-group">
+
+           <div class="col-md-12">
+        <div class="input-group">
+        <span class="input-group-addon"><!-- <i class="glyphicon glyphicon-lock"></i> --></span>
+         <input placeholder="location" class="form-control" type="text" ng-model="job.location">
+        </div>
+      </div>
+   </div>
+                            
+                          
+     <div class="form-group">
+      <div class="col-md-12">
+       <button type="submit" ng-click="saveJob()" class="btn btn-md btn-danger pull-right">Post Job </button>
+            </div>
+      </div>
+    </fieldset>
+     </form>
+ </div> 
+</div></div>
+</body>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-resource.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-cookies.js"></script>
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+<script type="text/javascript"
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+
+
+<script type="text/javascript" src="_job/jobcontroller.js"></script>
+<script type="text/javascript" src="_job/jobservice.js"></script>
+
+
+</html>
